@@ -15,6 +15,9 @@
 		6513AA0B1DC9BCE50009E27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6513AA091DC9BCE50009E27C /* LaunchScreen.storyboard */; };
 		6513AA161DC9BCE50009E27C /* BesierPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513AA151DC9BCE50009E27C /* BesierPathTests.m */; };
 		6513AA211DC9BCE50009E27C /* BesierPathUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513AA201DC9BCE50009E27C /* BesierPathUITests.m */; };
+		6513AA301DC9BD000009E27C /* BesierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513AA2F1DC9BD000009E27C /* BesierView.m */; };
+		6513AA331DC9C2330009E27C /* CoreGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6513AA321DC9C2330009E27C /* CoreGraphicsView.m */; };
+		65E9CB271DC9C5C400D9CE91 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E9CB261DC9C5C400D9CE91 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		6513AA1C1DC9BCE50009E27C /* BesierPathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BesierPathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6513AA201DC9BCE50009E27C /* BesierPathUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BesierPathUITests.m; sourceTree = "<group>"; };
 		6513AA221DC9BCE50009E27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6513AA2E1DC9BD000009E27C /* BesierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BesierView.h; sourceTree = "<group>"; };
+		6513AA2F1DC9BD000009E27C /* BesierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BesierView.m; sourceTree = "<group>"; };
+		6513AA311DC9C2330009E27C /* CoreGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreGraphicsView.h; path = ../CoreGraphicsView.h; sourceTree = "<group>"; };
+		6513AA321DC9C2330009E27C /* CoreGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreGraphicsView.m; path = ../CoreGraphicsView.m; sourceTree = "<group>"; };
+		65E9CB261DC9C5C400D9CE91 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +117,12 @@
 				6513AA071DC9BCE50009E27C /* Assets.xcassets */,
 				6513AA091DC9BCE50009E27C /* LaunchScreen.storyboard */,
 				6513AA0C1DC9BCE50009E27C /* Info.plist */,
+				65E9CB261DC9C5C400D9CE91 /* 1.png */,
 				6513A9FB1DC9BCE50009E27C /* Supporting Files */,
+				6513AA2E1DC9BD000009E27C /* BesierView.h */,
+				6513AA2F1DC9BD000009E27C /* BesierView.m */,
+				6513AA311DC9C2330009E27C /* CoreGraphicsView.h */,
+				6513AA321DC9C2330009E27C /* CoreGraphicsView.m */,
 			);
 			path = BesierPath;
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E9CB271DC9C5C400D9CE91 /* 1.png in Resources */,
 				6513AA0B1DC9BCE50009E27C /* LaunchScreen.storyboard in Resources */,
 				6513AA081DC9BCE50009E27C /* Assets.xcassets in Resources */,
 				6513AA061DC9BCE50009E27C /* Main.storyboard in Resources */,
@@ -273,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6513AA301DC9BD000009E27C /* BesierView.m in Sources */,
 				6513AA031DC9BCE50009E27C /* ViewController.m in Sources */,
 				6513AA001DC9BCE50009E27C /* AppDelegate.m in Sources */,
 				6513A9FD1DC9BCE50009E27C /* main.m in Sources */,
+				6513AA331DC9C2330009E27C /* CoreGraphicsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +521,7 @@
 				6513AA271DC9BCE50009E27C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6513AA281DC9BCE50009E27C /* Build configuration list for PBXNativeTarget "BesierPathTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +530,7 @@
 				6513AA2A1DC9BCE50009E27C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6513AA2B1DC9BCE50009E27C /* Build configuration list for PBXNativeTarget "BesierPathUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +539,7 @@
 				6513AA2D1DC9BCE50009E27C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

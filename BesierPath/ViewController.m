@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "BesierView.h"
+#import "CoreGraphicsView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    BesierView * view = [[BesierView alloc]initWithFrame:CGRectMake(30, 30, 200, 200)] ;
+    
+    [self.view addSubview:view] ;
+    
+    
+    CoreGraphicsView * view2 = [[CoreGraphicsView alloc]initWithFrame:CGRectMake(30, 250, 200, 200) ] ;
+    
+    [self.view addSubview:view2 ] ;
+    
+    
+    
 }
 
 
